@@ -1,0 +1,49 @@
+﻿<?xml version="1.0"?>
+
+<DataForm xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+          xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+          xmlns="http://www.enova.pl/schema/form.xsd"
+          xsi:schemaLocation="http://www.enova.pl/schema/ http://www.enova.pl/schema/form.xsd"
+          RightName="Page:SzablonPage"
+          Priority="3"
+          DataType="Soneta.Zadania.Zadanie, Soneta.Zadania">
+  <Page Name="SzablonPage" CaptionHtml="Szablon" DataContext="{DataSource}" Visibility="{New SzablonMailaExtender.IsVisible()}">
+    <Stack>
+      <Group CaptionHtml="Ogólne">
+        <Row>
+          <Field CaptionHtml="Nazwa" OuterWidth="50" LabelWidth="10" EditValue="{Nazwa}" />
+          <Field CaptionHtml="Numer" OuterWidth="53" LabelWidth="10" EditValue="{Numer}" />
+          <Field CaptionHtml="Zablokowany" OuterWidth="23" LabelWidth="10" EditValue="{Features.PowiadomieniaZablokowany}" />
+        </Row>
+      </Group>
+      <Group CaptionHtml="Email">
+        <Row>
+          <Field CaptionHtml="Adresat" OuterWidth="85" LabelWidth="10" EditValue="{Kontakt.EMAIL}" />
+        </Row>
+        <Row>
+          <Field CaptionHtml="Temat" OuterWidth="85" LabelWidth="10" EditValue="{Features.PowiadomieniaTemat}" />
+        </Row>
+        <Row>
+          <Field CaptionHtml="Treść" Height="15" OuterWidth="110" LabelWidth="10" EditValue="{Opis}" />
+        </Row>
+      </Group>
+      <Group CaptionHtml="Powiadomienia">
+        <Row Height="1"  DataContext="{New SzablonMailaExtender}" >
+          <Field CaptionHtml="Cykl" Width="*" EditValue="{CycleDefinition()}" />
+          <Command CaptionHtml="..." OuterWidth="5" MethodName="Edit" IsReadOnly="{IsReadOnly()}" />
+        </Row>
+      </Group>
+      <Group CaptionHtml="Załącznik">
+        <Row>
+          <Field CaptionHtml="Wydruk" OuterWidth="60" LabelWidth="10" EditValue="{Features.PowiadomieniaWydruk}" />
+        </Row>
+      </Group>
+      <Group CaptionHtml="Pozostałe">
+        <Row>
+          <Field CaptionHtml="Ostatnia wysyłka" OuterWidth="50" LabelWidth="10" LabelHeight="2" IsReadOnly="true" EditValue="{Features.PowiadomieniaOstatnieWywolanie}" />
+        </Row>
+      </Group>
+    </Stack>
+  </Page>
+</DataForm>
+

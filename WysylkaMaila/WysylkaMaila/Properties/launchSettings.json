@@ -1,0 +1,10 @@
+{
+  "profiles": {
+    "WysylkaMaila": {
+      "commandName": "Executable",
+      "executablePath": "D:\\Soneta\\enova365 1910.1.2.17612\\SonetaExplorer.exe",
+      "commandLineArgs": "/debug",
+      "nativeDebugging": false
+    }
+  }
+}
