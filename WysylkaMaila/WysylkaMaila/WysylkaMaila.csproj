@@ -19,7 +19,7 @@
     <ProjectReference Include="..\..\Enova.Common\Enova.Common.csproj" />
   </ItemGroup>
   <ItemGroup>
-    <PackageReference Update="Soneta.Products.Modules" Version="1912.0.1" />
+    <PackageReference Update="Soneta.Products.Modules" Version="2003.0.0" />
     <PackageReference Update="System.ValueTuple" Version="4.5.0" />
   </ItemGroup>
 </Project>

@@ -8,10 +8,10 @@
     <OutputPath>C:\Program Files\Common Files\Soneta\Assemblies</OutputPath>
   </PropertyGroup>
   <ItemGroup>
-    <PackageReference Include="Szmaragd" Version="1912.0.1.8" />
+    <PackageReference Include="Szmaragd" Version="2001.0.0.8" />
   </ItemGroup>
   <ItemGroup>
-    <PackageReference Update="Soneta.Products.Modules" Version="1912.0.1" />
+    <PackageReference Update="Soneta.Products.Modules" Version="2003.0.0" />
     <PackageReference Update="System.ValueTuple" Version="4.5.0" />
   </ItemGroup>
 </Project>
