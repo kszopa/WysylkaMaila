@@ -3,4 +3,7 @@
   <PropertyGroup>
     <TargetFramework>net47</TargetFramework>
   </PropertyGroup>
+  <ItemGroup>
+    <PackageReference Update="Soneta.Products.Test" Version="2005.2.2" />
+  </ItemGroup>
 </Project>

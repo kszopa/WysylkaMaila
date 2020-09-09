@@ -23,7 +23,7 @@
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
-    <PackageReference Update="Soneta.Products.Modules" Version="2003.0.0" />
+    <PackageReference Update="Soneta.Products.Modules" Version="2005.2.2" />
     <PackageReference Update="System.ValueTuple" Version="4.5.0" />
   </ItemGroup>
 </Project>
